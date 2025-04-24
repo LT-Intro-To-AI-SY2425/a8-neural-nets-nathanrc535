@@ -13,6 +13,6 @@ party_training_data = [([0.9, 0.6,0.8,0.3,0.1], [1.0]), ([0.8 , 0.8, 0.4, 0.6, 0
 
 party_testing_data = [([1.0, 1.0, 1.0, 0.1, 0.1], []), ([0.5, 0.2, 0.1, 0.7, 0.7], []), ([0.8,0.3,0.3,0.3,0.8], []), ([0.8,0.3,0.3,0.8,0.3], []), ([0.9,0.8,0.8,0.3,0.6], [])]
 
-polNet = NeuralNet(5,2,1)
-polNet.train(party_training_data, iters= 1000, print_interval = 100)
-print(polNet.test_with_expected(party_testing_data))
+PoliticalNet = NeuralNet(5,2,1)
+PoliticalNet.train(party_training_data, iters= 10000, print_interval = 100)
+print(PoliticalNet.test_with_expected(party_testing_data))
